@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Form for club
+    Author: Jessica Gilmore
+    Date: June 26, 2021 -->
+    <meta charset="utf-8">
+    <title>Class Registration Form</title>
+    <link href="style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <a href="index.html">Home</a> |
+    <a href="classes.html">Class Schedule</a> |
+    <a href="info.html">Registration Form</a>
+
+    <h2>Registration Form</h2>
+    <div class="container">
+      <form method="get" action="thankyou.html">
+
+      <h2>Registration Form</h2>
+
+        <fieldset>
+          <legend>
+            Contact Information
+          </legend>
+
+          <label for="fname">
+            Name:
+            <input autofocus type="text" name="fname" id="fname" required placeholder="First Name"/>
+          </label>
+
+          <label>
+            Last Name:
+            <input type="text" name="lname" id="lname" required placeholder="Last Name" />
+          </label>
+
+          <label>
+            Email:
+            <input type="email" name="email" id="email" required placeholder="Email" />
+          </label>
+          <label>
+            Telephone:
+            <input type="tel" name="phone" id="phone" required placeholder="555-555-5555"
+             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+          </label>
+        </fieldset>
+
+        <fieldset>
+        <legend>
+          What's the best way and time of day to get ahold of you?
+        </legend>
+        <select name="Ways" id="Ways">
+          <option value="None">Any</option>
+          <option value="Call">Call</option>
+          <option value="Email">Email</option>
+          <option value="Text">Text</option>
+        </select>
+
+        <label class="radi0-inline">
+          <input type="radio" name="time"> AM
+        </label>
+        <label class="radi0-inline">
+          <input type="radio" name="time">PM
+        </label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          What classes would you like to take?
+        </legend>
+        <label class="checkbox-inline">
+          <input type="checkbox" value="">Advanced Cross Training
+        </label>
+
+        <label class="checkbox-inline">
+          <input type="checkbox" value="">Body Combat
+        </label>
+
+        <label class="checkbox-inline">
+          <input type="checkbox" value="">Body Pump
+        </label>
+
+        <label class="checkbox-inline">
+          <input type="checkbox" value="">Cross Training
+        </label>
+
+        <label class="checkbox-inline">
+          <input type="checkbox" value="">MixxedFIT
+        </label>
+
+        <label class="checkbox-inline">
+          <input type="checkbox" value="">Spin
+        </label>
+
+        <label class="checkbox-inline">
+          <input type="checkbox" value="">Sprint
+        </label>
+
+        <label class="checkbox-inline">
+          <input type="checkbox" value="">Step Interval
+        </label>
+
+        <label class="checkbox-inline">
+          <input type="checkbox" value="">Zumba
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          Additional Info
+        </legend>
+        <textarea name="comment" placeholder="Any Additional Information...">
+        </textarea>
+      </fieldset>
+
+          <input class="submit" type="Submit" value="Submit"/>
+      </form>
+    </div>
+
+  </body>
+</html>
